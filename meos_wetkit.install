@@ -1,0 +1,12 @@
+<?php
+/**
+ * @file
+ * Ezy-bake Drupal install profile .install file.
+ */
+
+/**
+ * Implements hook_install().
+ */
+function ezybake_drupal_install() {
+
+}
