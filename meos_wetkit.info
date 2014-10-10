@@ -1,0 +1,22 @@
+name = MEOS Web Experience Toolkit
+description = An installation profile for MEOS Websites based on top of the Web Experience Toolkit Distribution
+core = 7.x
+api = 2
+;theme = meos_mn
+
+base = wet-boew
+
+
+; Core dependencies
+;dependencies[] = contextual
+
+
+
+; Contrib dependecies
+
+
+; Features
+;dependencies[] = ezybake_core
+
+
+; Temporary dependencies
