@@ -4,6 +4,11 @@ api = 2
 ; Drupal core
 projects[drupal][type] = "core"
 
+;Stanford Metatag Nobots so test sites do not get indexed
+projects[stanford_metatag_nobots][type] = "module"
+projects[stanford_metatag_nobots][download][type] = "git"
+projects[stanford_metatag_nobots][download][url] = "git@github.com:SU-SWS/stanford_metatag_nobots.git"
+
 
 ; Install profile
 projects[meos_wetkit][type] = "profile"
