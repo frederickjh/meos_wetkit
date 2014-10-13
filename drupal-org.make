@@ -86,4 +86,4 @@ projects[views_bulk_operations][subdir] = "contrib"
 ; END Tasy Backend stuff
 
 ; Translations
-projects[] = de
+translations[] = de
