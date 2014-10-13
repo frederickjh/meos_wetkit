@@ -19,7 +19,9 @@ base = wet-boew
 ;dependencies[] = ezybake_core
 
 
-; Temporary 
+; Temporary
+;Stanford Metatag Nobots so test sites do not get indexed
+dependencies[] = stanford_metatag_nobots
 
 ; Tasty Backend stuff
 ; Core dependancies
