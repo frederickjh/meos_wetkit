@@ -8,6 +8,8 @@
  * Implements hook_install().
  */
 function meos_wetkit_install() {
+// Run the Wetkit install
+include 'wetkit.install';
 
 // Tasty Backend stuff
   // Add text formats.
