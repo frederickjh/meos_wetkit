@@ -1,4 +1,4 @@
-core = 7.x
+core = 7.31
 api = 2
 
 ; Drupal core
