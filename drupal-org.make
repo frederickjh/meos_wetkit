@@ -10,9 +10,11 @@ projects[stanford_metatag_nobots][download][type] = "git"
 projects[stanford_metatag_nobots][download][url] = "git@github.com:SU-SWS/stanford_metatag_nobots.git"
 
 ;German language for install
-projects[download][type] = "file"
-projects[download][url] = "http://cgit.drupalcode.org/l10n_install/plain/translations/de.po?h=7.x-1.x"
-projects[download][filename] = "profiles/meos_wetkit/translations/de.po"
+download[type] = "file"
+download[request_type] = post
+download[data] = "h=7.x-1.x"
+download[url] = "http://cgit.drupalcode.org/l10n_install/plain/translations/de.po"
+download[filename] = "profiles/meos_wetkit/translations/de.po"
 
 ; Libraries
 libraries[profiler][download][type] = "get"
