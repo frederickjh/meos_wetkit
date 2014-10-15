@@ -87,8 +87,8 @@ projects[views_bulk_operations][subdir] = "contrib"
 ; Translations
 translations[] = de
 
-
+;;;; Commented out for testing
 ; Install profile
-projects[wetkit][type] = "profile"
-projects[wetkit][download][type] = "git"
-projects[wetkit][download][url] = "git://github.com/wet-boew/wet-boew-drupal.git"
+;projects[wetkit][type] = "profile"
+;projects[wetkit][download][type] = "git"
+;projects[wetkit][download][url] = "git://github.com/wet-boew/wet-boew-drupal.git"
