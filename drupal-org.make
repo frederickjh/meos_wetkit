@@ -12,7 +12,7 @@ projects[stanford_metatag_nobots][download][url] = "git@github.com:SU-SWS/stanfo
 ;German language for install
 download[type] = "file"
 download[url] = "http://cgit.drupalcode.org/l10n_install/plain/translations/de.po?h=7.x-1.x"
-download[destination] = "profiles/meos_wetkit/translations"
+download[filename] = "profiles/meos_wetkit/translations/de.po"
 
 ; Libraries
 libraries[profiler][download][type] = "get"
