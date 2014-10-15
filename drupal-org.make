@@ -89,7 +89,6 @@ translations[] = de
 
 
 ; Install profile
-projects[meos_wetkit][type] = "profile"
-projects[meos_wetkit][download][type] = "git"
-projects[meos_wetkit][download][url] = "git://github.com/wet-boew/wet-boew-drupal.git"
-projects[meos_wetkit][download][subdir] = "wetkit"
+projects[wetkit][type] = "profile"
+projects[wetkit][download][type] = "git"
+projects[wetkit][download][url] = "git://github.com/wet-boew/wet-boew-drupal.git"
