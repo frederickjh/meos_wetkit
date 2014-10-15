@@ -9,20 +9,14 @@ projects[stanford_metatag_nobots][type] = "module"
 projects[stanford_metatag_nobots][download][type] = "git"
 projects[stanford_metatag_nobots][download][url] = "git@github.com:SU-SWS/stanford_metatag_nobots.git"
 
-
-; Install profile
-projects[meos_wetkit][type] = "profile"
-projects[meos_wetkit][download][type] = "git"
-projects[meos_wetkit][download][url] = "git://github.com/wet-boew/wet-boew-drupal.git"
+;German language for install
+download[type] = "file"
+download[url] = "http://cgit.drupalcode.org/l10n_install/plain/translations/de.po?h=7.x-1.x"
+download[destination] = "profiles/meos_wetkit/translations"
 
 ; Libraries
 libraries[profiler][download][type] = "get"
 libraries[profiler][download][url] = "http://ftp.drupal.org/files/projects/profiler-7.x-2.0-beta2.tar.gz"
-
-;German language for install
-download[type] = file
-download[url] = "http://cgit.drupalcode.org/l10n_install/plain/translations/de.po?h=7.x-1.x"
-download[destination] = "profiles/meos_wetkit/translations"
 
 ; Tasty Backend stuff.
 ; Tasty Backend modules.
@@ -92,3 +86,10 @@ projects[views_bulk_operations][subdir] = "contrib"
 
 ; Translations
 translations[] = de
+
+
+; Install profile
+projects[meos_wetkit][type] = "profile"
+projects[meos_wetkit][download][type] = "git"
+projects[meos_wetkit][download][url] = "git://github.com/wet-boew/wet-boew-drupal.git"
+projects[meos_wetkit][download][subdir] = "wetkit"
