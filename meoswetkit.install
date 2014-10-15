@@ -7,7 +7,7 @@
 /**
  * Implements hook_install().
  */
-function meos_wetkit_install() {
+function meoswetkit_install() {
 
 // Tasty Backend stuff
   // Add text formats.
