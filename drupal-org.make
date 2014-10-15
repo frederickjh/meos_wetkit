@@ -19,6 +19,11 @@ projects[meos_wetkit][download][url] = "git://github.com/wet-boew/wet-boew-drupa
 libraries[profiler][download][type] = "get"
 libraries[profiler][download][url] = "http://ftp.drupal.org/files/projects/profiler-7.x-2.0-beta2.tar.gz"
 
+;German language for install
+download[type] = file
+download[url] = "http://cgit.drupalcode.org/l10n_install/plain/translations/de.po?h=7.x-1.x"
+download[destination] = "profiles/meos_wetkit/translations"
+
 ; Tasty Backend stuff.
 ; Tasty Backend modules.
 
