@@ -9,10 +9,6 @@
  */
 function meos_wetkit_install() {
 
-
-
-
-
 // Tasty Backend stuff
   // Add text formats.
   $filtered_html_format = array(
