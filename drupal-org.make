@@ -11,7 +11,7 @@ projects[stanford_metatag_nobots][download][url] = "git@github.com:SU-SWS/stanfo
 
 ;German language for install
 download[type] = "file"
-download[request_type] = post
+download[request_type] = get
 download[data] = "h=7.x-1.x"
 download[url] = "http://cgit.drupalcode.org/l10n_install/plain/translations/de.po"
 download[destination] = "profiles/meos_wetkit/translations/"
