@@ -9,14 +9,6 @@ projects[stanford_metatag_nobots][type] = "module"
 projects[stanford_metatag_nobots][download][type] = "git"
 projects[stanford_metatag_nobots][download][url] = "git@github.com:SU-SWS/stanford_metatag_nobots.git"
 
-;German language for install
-download[type] = "post"
-;download[request_type] = post
-download[data] = "h=7.x-1.x"
-download[url] = "http://cgit.drupalcode.org/l10n_install/plain/translations/de.po"
-download[destination] = "profiles/meos_wetkit/translations/"
-download[filename] = "de.po"
-
 ; Libraries
 libraries[profiler][download][type] = "get"
 libraries[profiler][download][url] = "http://ftp.drupal.org/files/projects/profiler-7.x-2.0-beta2.tar.gz"
@@ -92,6 +84,8 @@ translations[] = de
 
 ;;;; Commented out for testing
 ; Install profile
-;projects[wetkit][type] = "profile"
-;projects[wetkit][download][type] = "git"
-;projects[wetkit][download][url] = "git://github.com/wet-boew/wet-boew-drupal.git"
+projects[wetkit][type] = "profile"
+projects[wetkit][download][type] = "git"
+projects[wetkit][download][url] = "git://github.com/wet-boew/wet-boew-drupal.git"
+; Download release canidate 23 translation file as it has a more complete translation file than the most current version.
+projects[wetkit][l10n_path] = "http://ftp.drupal.org/files/translations/7.x/wetkit/wetkit-7.x-1.0-rc23.de.po"
