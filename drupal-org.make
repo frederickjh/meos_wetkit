@@ -87,5 +87,5 @@ translations[] = de
 projects[wetkit][type] = "profile"
 projects[wetkit][download][type] = "git"
 projects[wetkit][download][url] = "git://github.com/wet-boew/wet-boew-drupal.git"
-; Download release canidate 23 translation file as it has a more complete translation file than the most current version.
+; Download version 7.x-1.0-rc23 translation file as it has a more complete translation file than more recent versions.
 projects[wetkit][l10n_path] = "http://ftp.drupal.org/files/translations/7.x/wetkit/wetkit-7.x-1.0-rc23.de.po"
