@@ -82,10 +82,13 @@ projects[views_bulk_operations][subdir] = "contrib"
 ; Translations
 translations[] = de
 
+; Web Experience Kit Distribution
+includes[wetkit] = "../projects/wetkit/build-wetkit.make"
+
 ;;;; Commented out for testing
 ; Install profile
-projects[wetkit][type] = "profile"
-projects[wetkit][download][type] = "git"
-projects[wetkit][download][url] = "git://github.com/wet-boew/wet-boew-drupal.git"
+;projects[wetkit][type] = "profile"
+;projects[wetkit][download][type] = "git"
+;projects[wetkit][download][url] = "git://github.com/wet-boew/wet-boew-drupal.git"
 ; Download version 7.x-1.0-rc23 translation file as it has a more complete translation file than more recent versions.
 projects[wetkit][l10n_path] = "http://ftp.drupal.org/files/translations/7.x/wetkit/wetkit-7.x-1.0-rc23.de.po"
