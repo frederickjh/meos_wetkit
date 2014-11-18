@@ -83,7 +83,7 @@ projects[views_bulk_operations][subdir] = "contrib"
 translations[] = de
 
 ; Web Experience Kit Distribution
-includes[wetkit] = "../projects/wetkit/build-wetkit.make"
+includes[wetkit] = "./projects/wetkit/build-wetkit.make"
 
 ;;;; Commented out for testing
 ; Install profile
