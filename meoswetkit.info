@@ -6,6 +6,7 @@ api = 2
 
 base = wet-boew
 
+exclusive = 1
 
 ; Core dependencies
 ;dependencies[] = contextual
