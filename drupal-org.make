@@ -85,6 +85,9 @@ translations[] = de
 ; Web Experience Kit Distribution
 includes[wetkit] = "./projects/wetkit/build-wetkit.make"
 
+; MEOS Wetkit Shiny Theme
+
+
 ;;;; Commented out for testing
 ; Install profile
 ;projects[wetkit][type] = "profile"
