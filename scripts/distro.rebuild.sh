@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# Pull down latest copy of DKAN.
+# Pull down latest copy of Wetkit.
 ./distro.pull.sh
 
 GIT_ROOT=$(git rev-parse --show-toplevel)
@@ -9,12 +9,12 @@ cd $GIT_ROOT
 echo "Removing docroot"
 rm -rf docroot
 
-echo "Building DKAN profile"
-drush make -y scripts/build-dkan-profile.make docroot --no-gitinfofile
+echo "Building Wetkit profile"
+drush make -y scripts/build-wetkit-profile.make docroot --no-gitinfofile
 
 # Remove .gitignore files that are undesired.
-rm docroot/profiles/dkan/.gitignore
-rm docroot/profiles/dkan/libraries/Leaflet/.gitignore
+rm docroot/profiles/wetkit/.gitignore
+rm docroot/profiles/wetkit/libraries/Leaflet/.gitignore
 
 echo "Symlinking sites directory to docroot/sites"
 cd docroot
