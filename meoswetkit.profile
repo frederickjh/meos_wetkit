@@ -15,12 +15,14 @@ profiler_v2('meoswetkit');
  *
  * Perform actions to set up the site for this profile.
  */
+/** 
 function meoswetkit_install() {
   include_once DRUPAL_ROOT . '/profiles/meoswetkit/meoswetkit.install';
   include_once DRUPAL_ROOT . '/profiles/wetkit/wetkit.install';
   wetkit_install();
   meoswetkit_install();
 }
+ */
 
 /**
  * Task callback: shows the welcome screen.
@@ -81,4 +83,21 @@ function meoswetkit_install_tasks_alter(&$tasks, $install_state) {
   // Magically go one level deeper in solving years of dependency problems.
   require_once drupal_get_path('module', 'wetkit_core') . '/wetkit_core.profile.inc';
   $tasks['install_load_profile']['function'] = 'wetkit_core_install_load_profile';
+}
+
+/**
+ * Force-set a theme at any point during the execution of the request.
+ *
+ * Drupal doesn't give us the option to set the theme during the installation
+ * process and forces enable the maintenance theme too early in the request
+ * for us to modify it in a clean way.
+ */
+function _meoswetkit_set_theme($target_theme) {
+  if ($GLOBALS['theme'] != $target_theme) {
+    unset($GLOBALS['theme']);
+
+    drupal_static_reset();
+    $GLOBALS['conf']['maintenance_theme'] = $target_theme;
+    _drupal_maintenance_theme();
+  }
 }
