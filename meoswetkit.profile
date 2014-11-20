@@ -65,7 +65,7 @@ function meoswetkit_install_tasks_alter(&$tasks, $install_state) {
 
   // The "Welcome" screen needs to come after the first two steps
   // (profile and language selection), despite the fact that they are disabled.
-  $new_task['wetkit_install_welcome'] = array(
+  $new_task['meoswetkit_install_welcome'] = array(
     'display' => TRUE,
     'display_name' => st('Welcome'),
     'type' => 'form',
@@ -74,15 +74,7 @@ function meoswetkit_install_tasks_alter(&$tasks, $install_state) {
   $old_tasks = $tasks;
   $tasks = array_slice($old_tasks, 0, 2) + $new_task + array_slice($old_tasks, 2);
 
-  _wetkit_set_theme('wetkit_shiny');
-
-  // If using French Locale as default remove associated Install Task.
-  unset($tasks['install_import_locales']);
-  unset($tasks['install_import_locales_remaining']);
-
-  // Magically go one level deeper in solving years of dependency problems.
-  require_once drupal_get_path('module', 'wetkit_core') . '/wetkit_core.profile.inc';
-  $tasks['install_load_profile']['function'] = 'wetkit_core_install_load_profile';
+  _meoswetkit_set_theme('meoswetkit_shiny');
 }
 
 /**
