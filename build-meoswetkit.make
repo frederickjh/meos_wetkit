@@ -1,8 +1,8 @@
-core = 7.x
 api = 2
+core = 7.x
 
-; Drupal core
-projects[drupal][type] = "core"
+; Drupal.org packaging standards
+projects[drupal][version] = 7.32
 
 ; Install profile
 projects[meoswetkit][type] = "profile"
