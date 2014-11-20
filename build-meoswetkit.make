@@ -11,6 +11,9 @@ projects[drupal][patch][1470656] = http://drupal.org/files/drupal-1470656-14.pat
 projects[drupal][patch][865536]  = http://drupal.org/files/drupal-865536-204.patch
 projects[drupal][patch][1772316] = http://drupal.org/files/drupal7-allow_change_system-requirements-1772316-18.patch
 projects[drupal][patch][2289867] = http://drupal.org/files/issues/D7_port_fix_w3c_url_validation_html5_changes-2289867-1.patch
+; Added patch against error: Fatal error: Call to undefined function db_table_exists() in /home/dev-meos/domains/meoswetkit.dev-meos.tk/docroot/modules/user/user.module on line 4026
+; https://www.drupal.org/node/2148761   https://www.drupal.org/node/2278487
+projects[drupal][patch][2289867] = http://drupal.org/files/1093420-22.patch
 
 ; Install profile
 projects[meoswetkit][type] = "profile"

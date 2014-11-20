@@ -17,6 +17,7 @@ profiler_v2('meoswetkit');
  */
 function meoswetkit_install() {
   include_once DRUPAL_ROOT . '/profiles/meoswetkit/meoswetkit.install';
+  include_once DRUPAL_ROOT . '/profiles/wetkit/wetkit.install';
   wetkit_install();
   meoswetkit_install();
 }
