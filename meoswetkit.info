@@ -14,7 +14,10 @@ exclusive = 1
 
 
 ; Contrib dependecies
-
+dependencies[] = context
+dependencies[] = features
+dependencies[] = Context_http_header
+dependencies[] = Context_useragent
 
 ; Features
 ;dependencies[] = ezybake_core

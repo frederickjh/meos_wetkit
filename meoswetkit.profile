@@ -21,7 +21,6 @@ function meoswetkit_install() {
   wetkit_install();
   meoswetkit_install();
 }
-?>
 
 /**
  * Task callback: shows the welcome screen.
@@ -49,4 +48,37 @@ function meoswetkit_install_welcome($form, &$form_state, &$install_state) {
     '#weight' => 10,
   );
   return $form;
+}
+
+/**
+ * Implements hook_install_tasks_alter().
+ */
+function meoswetkit_install_tasks_alter(&$tasks, $install_state) {
+  $tasks['install_select_profile']['display'] = FALSE;
+  $tasks['install_select_locale']['display'] = FALSE;
+
+  // Hide some messages from various modules that are just too chatty.
+  drupal_get_messages('status');
+  drupal_get_messages('warning');
+
+  // The "Welcome" screen needs to come after the first two steps
+  // (profile and language selection), despite the fact that they are disabled.
+  $new_task['wetkit_install_welcome'] = array(
+    'display' => TRUE,
+    'display_name' => st('Welcome'),
+    'type' => 'form',
+    'run' => isset($install_state['parameters']['welcome']) ? INSTALL_TASK_SKIP : INSTALL_TASK_RUN_IF_REACHED,
+  );
+  $old_tasks = $tasks;
+  $tasks = array_slice($old_tasks, 0, 2) + $new_task + array_slice($old_tasks, 2);
+
+  _wetkit_set_theme('wetkit_shiny');
+
+  // If using French Locale as default remove associated Install Task.
+  unset($tasks['install_import_locales']);
+  unset($tasks['install_import_locales_remaining']);
+
+  // Magically go one level deeper in solving years of dependency problems.
+  require_once drupal_get_path('module', 'wetkit_core') . '/wetkit_core.profile.inc';
+  $tasks['install_load_profile']['function'] = 'wetkit_core_install_load_profile';
 }
