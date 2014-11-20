@@ -4,7 +4,7 @@ core = 7.x
 api = 2
 ;theme = meos_mn
 
-base = wet-boew
+base = wetkit
 
 exclusive = 1
 
