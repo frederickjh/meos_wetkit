@@ -32,10 +32,10 @@ function meoswetkit_install_welcome($form, &$form_state, &$install_state) {
 
   $message = st('Thank you for choosing the MEOS Web Experience Toolkit Drupal Distribution!') . '<br />';
   $message .= '<p>' . st('This distribution installs Drupal with
-    preconfigured features that will help you meet Enterprise Standards.') . '</p>';
-  $message .= '<p>' . st('Please note that this is a community-supported work in progress,
-    so be sure to join us over on ' . l(t('github.com/wet-boew/wet-boew-drupal'), 'http://github.com/wet-boew/wet-boew-drupal') .
-    ' and help us improve this product.') . '</p>';
+    pre-configured features that will help you meet Enterprise Standards.') . '</p>';
+  $message .= '<p>' . st('Please note that this distribution is based on the Drupal Wetkit distribution which is a community-supported work in progress,
+    so be sure to join them over on ' . l(t('github.com/wet-boew/wet-boew-drupal'), 'http://github.com/wet-boew/wet-boew-drupal') .
+    ' and help improve this product.') . '</p>';
 
   $form = array();
   $form['welcome_message'] = array(
