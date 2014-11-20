@@ -86,7 +86,9 @@ translations[] = de
 includes[wetkit] = "./projects/wetkit/build-wetkit.make"
 
 ; MEOS Wetkit Shiny Theme
-
+projects[meoswetkit_shiny][type] = "profile"
+projects[meoswetkit_shiny][download][type] = "git"
+projects[meoswetkit_shiny][download][url] = "git@github.com:frederickjh/meoswetkit_shiny.git"
 
 ;;;; Commented out for testing
 ; Install profile
