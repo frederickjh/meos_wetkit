@@ -89,6 +89,7 @@ includes[wetkit] = "./projects/wetkit/build-wetkit.make"
 projects[meoswetkit_shiny][type] = "profile"
 projects[meoswetkit_shiny][download][type] = "git"
 projects[meoswetkit_shiny][download][url] = "git@github.com:frederickjh/meoswetkit_shiny.git"
+projects[meoswetkit][subdir] = "profiles/meoswetkit/themes"
 
 ;;;; Commented out for testing
 ; Install profile
