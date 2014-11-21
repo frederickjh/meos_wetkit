@@ -15,7 +15,10 @@ projects[context][subdir] = contrib
 projects[features][subdir] = contrib
 
 ;FIXME Could be a problem with the next module due to a name mismatch between the project machine name and module name
-projects[Context_http_header][subdir] = contrib
+;projects[Context_http_header][subdir] = contrib
+projects[Context_http_header][type] = "module"
+projects[Context_http_header][download][type] = "git"
+projects[Context_http_header][download][url] = "git@github.com:frederickjh/context_http_header.git"
 projects[Context_useragent][subdir] = contrib
 
 ; Libraries
