@@ -22,7 +22,7 @@ function meoswetkit_install() {
   );
   $pid = db_insert('password_policy')
   ->fields(array(
-    'name' => 'WetKit Default',
+    'name' => 'MEOS WetKit Default',
     'description' => 'The default password policy implementation included with the WetKit distribution.',
     'policy' => serialize($policy),
     'enabled' => 1,
