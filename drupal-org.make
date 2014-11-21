@@ -20,7 +20,7 @@ projects[context_http_header][type] = "module"
 projects[context_http_header][download][type] = "git"
 projects[context_http_header][download][url] = "git@github.com:frederickjh/context_http_header.git"
 projects[context_useragent][subdir] = contrib
-projects[context_useragent][version] = 7.x-1.x-dev
+projects[context_useragent][version] = 1.x-dev
 
 ; Libraries
 libraries[profiler][download][type] = "get"
