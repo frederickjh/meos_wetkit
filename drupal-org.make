@@ -9,6 +9,15 @@ projects[stanford_metatag_nobots][type] = "module"
 projects[stanford_metatag_nobots][download][type] = "git"
 projects[stanford_metatag_nobots][download][url] = "git@github.com:SU-SWS/stanford_metatag_nobots.git"
 
+
+; Contrib dependencies
+projects[context][subdir] = contrib
+projects[features][subdir] = contrib
+
+;FIXME Could be a problem with the next module due to a name mismatch between the project machine name and module name
+projects[Context_http_headers][subdir] = contrib
+projects[Context_useragent][subdir] = contrib
+
 ; Libraries
 libraries[profiler][download][type] = "get"
 libraries[profiler][download][url] = "http://ftp.drupal.org/files/projects/profiler-7.x-2.0-beta2.tar.gz"
