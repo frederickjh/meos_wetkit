@@ -65,15 +65,15 @@ function meoswetkit_install_tasks_alter(&$tasks, $install_state) {
 
   // The "Welcome" screen needs to come after the first two steps
   // (profile and language selection), despite the fact that they are disabled.
-  $new_task['meoswetkit_install_welcome'] = array(
+/**  $new_task['meoswetkit_install_welcome'] = array(
     'display' => TRUE,
     'display_name' => st('Welcome'),
     'type' => 'form',
     'run' => isset($install_state['parameters']['welcome']) ? INSTALL_TASK_SKIP : INSTALL_TASK_RUN_IF_REACHED,
-  );
+  ); 
   $old_tasks = $tasks;
   $tasks = array_slice($old_tasks, 0, 2) + $new_task + array_slice($old_tasks, 2);
-
+*/
   _meoswetkit_set_theme('meoswetkit_shiny');
 }
 
