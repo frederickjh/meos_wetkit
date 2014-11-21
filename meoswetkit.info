@@ -18,8 +18,8 @@ dependencies[] = context
 dependencies[] = features
 
 ;FIXME Could be a problem with the next module due to a name mismatch between the project machine name and module name
-dependencies[] = Context_http_header
-dependencies[] = Context_useragent
+;dependencies[] = Context_http_header
+;dependencies[] = Context_useragent
 
 ; Features
 ;dependencies[] = ezybake_core
