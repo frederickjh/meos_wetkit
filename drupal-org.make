@@ -15,7 +15,7 @@ projects[context][subdir] = contrib
 projects[features][subdir] = contrib
 
 ;FIXME Could be a problem with the next module due to a name mismatch between the project machine name and module name
-projects[Context_http_headers][subdir] = contrib
+projects[Context_http_header][subdir] = contrib
 projects[Context_useragent][subdir] = contrib
 
 ; Libraries
