@@ -15,12 +15,12 @@ projects[context][subdir] = contrib
 projects[features][subdir] = contrib
 
 ;FIXME Could be a problem with the next module due to a name mismatch between the project machine name and module name
-;projects[Context_http_header][subdir] = contrib
-projects[Context_http_header][type] = "module"
-projects[Context_http_header][download][type] = "git"
-projects[Context_http_header][download][url] = "git@github.com:frederickjh/context_http_header.git"
-projects[Context_useragent][subdir] = contrib
-projects[Context_useragent][version] = 7.x-1.x-dev
+;projects[context_http_header][subdir] = contrib
+projects[context_http_header][type] = "module"
+projects[context_http_header][download][type] = "git"
+projects[context_http_header][download][url] = "git@github.com:frederickjh/context_http_header.git"
+projects[context_useragent][subdir] = contrib
+projects[context_useragent][version] = 7.x-1.x-dev
 
 ; Libraries
 libraries[profiler][download][type] = "get"
