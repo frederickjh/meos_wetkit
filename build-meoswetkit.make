@@ -5,7 +5,7 @@ core = 7.x
  projects[wetkit][type] = "core"
  projects[wetkit][download][type] = git
  projects[wetkit][download][url] = https://github.com/frederickjh/wetkit.git
- projects[wetkit][download][branch] = 7.x-4.x-rc1
+ projects[wetkit][download][branch] = 7.x-4.0-rc1
 
 
 
